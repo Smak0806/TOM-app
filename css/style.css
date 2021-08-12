@@ -1,0 +1,66 @@
+:root{
+    --fugaz: 'Fugaz One', cursive;
+    --news: 'News Cycle', sans-serif;
+    --pixel: 'Press Start 2P', cursive;
+    --mainDarkColor: #320067;
+    --secondaryDarkColor: #14091f;
+    --contentFontColor: #ffffff;
+    --titlesFontColor: #a0d3ff;
+}
+
+.chiquitito{
+    max-height: 48px;
+}
+
+body{
+    font-family: var(--news);
+    background-color: var(--secondaryDarkColor)!important;
+    color: var(--contentFontColor)!important;
+}
+
+.titles{
+    font-family: var(--pixel);
+}
+
+nav{
+    background-color: var(--mainDarkColor)!important;
+}
+.links{
+    color: var(--contentFontColor)!important;
+    text-decoration: none;
+}
+
+.logo{
+    font-family: var(--pixel);
+}
+
+.csv-info{
+    margin: 2em auto;
+}
+
+.attention{
+    font-size: 16px;
+    padding: 0.5em;
+    margin: 0.5em auto;
+    text-align: center;
+    width: 80%;
+    border: solid 1px;
+    border-radius: 10px;
+    border-color:#ffa700;
+    background-color: #ffebc5;
+    color: #898989;
+    display: block;
+}
+
+.csvSample{
+    font-size: 14px;
+    padding: 1em 1em;
+    margin: 0.5em auto 1em auto;
+    width: 100%;
+    border: solid 1px;
+    border-radius: 10px;
+    border-color:#5a5a5a;
+    background-color: #ffffff;
+    color: #7b7b7b;
+    display: block;
+}

@@ -1,0 +1,41 @@
+<div class="row col-12">
+	
+	<div class="card-body col-lg-5 col-sm-12 d-flex justify-content-center">
+		
+		<form action="pruebaDate.php" method="get" accept-charset="utf-8" class="col-3">
+			
+			<div class="col-12 d-flex justify-content-center">
+				<h2>Select Your Index:</h2>
+			</div>
+
+			<select name="indexName" class="custom-select col-12 m-2">
+				<option value="SPX500">SPX500</option>
+				<option value="Russell2000">Russell2000</option>
+				<option value="">Index Name 2</option>
+				<option value="">Index Name 3</option>
+				<option value="">Index Name 4</option>			
+			</select>
+			
+			<div class="custom-control custom-checkbox col-12 m-2 d-flex justify-content-center">
+				<input type="checkbox" class="custom-control-input m-1" id="customCheck1" onchange="checkState(this);">
+				<label class="custom-control-label" for="customCheck1">Filter by day.</label>
+			</div>
+
+			<select name="DayOfWeek" id="DayOfWeek" class="custom-select col-12 m-2" disabled>
+				<option value="Monday">Select Day</option>
+				<option value="Monday">Monday</option>
+				<option value="Tuesday">Tuesday</option>
+				<option value="Wednesday">Wednesday</option>
+				<option value="Thursday">Thursday</option>
+				<option value="Friday">Friday</option>
+			</select>
+			
+			<div class="col-12 d-flex justify-content-center">
+				<button type="submit" class="btn btn-primary mx-auto">Submit</button>
+			</div>
+		
+		</form>
+
+	</div>
+
+</div>	

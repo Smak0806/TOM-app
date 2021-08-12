@@ -1,0 +1,40 @@
+Engulfing:     If (Tuesday.Close > Monday.High)
+    Tuesday is Green Engulfing
+    If (Tuesday.Close < Monday.Low)
+    Tuesday is Red Engulfing
+
+Doji:    If (Monday.BodyRange < 2)
+    Monday is Doji
+
+Inside Bar:    If(Tuesday.High < Monday.High) && (Tuesday.Low > Monday.Low)
+    Tuesday is Inside Bar
+
+Is Green:    If(Monday.Close > Monday.Open)
+    Monday is Green
+
+Is Red:     If(Monday.Close < Monday.Open)
+    Monday is Red
+
+Sideways:    If(Monday.BodyRange =< (sum(BodyRange.Column)/NumberOfDaysInData)/1.5))
+    Monday is Sideways
+
+    If(Monday.Close > Monday.Open)
+    Monday is Sideways Green
+
+CloseOnHighs:    If((Monday.High - Monday.Close) < 5)
+    Monday closed on Highs
+
+CloseOnLows:    If((Monday.Close - Monday.Low) < 5)
+    Monday closed on Lows
+
+HigherHighs:    If(Tuesday.High > Monday.High)
+    Tuesday did Higher Highs
+
+LowerLows:    If(Tuesday.Low < Monday.Low)
+    Tuesday did Lower Lows
+
+OutsideBar:     If(Tuesday.High > Monday.High && Tuesday.Low < Monday.Low)
+    Tuesday is OutsideBar
+
+
+    
