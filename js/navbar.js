@@ -1,10 +1,25 @@
-console.log("NAVBAR.JS");
-
 function getNavbarDisplayStatus(){
-    console.log(_("navbarTogglerDemo03").style.display);
+   return _("navbarTogglerDemo03").style.display;
+}
+
+function setNavbarDisplay(status){
+    _("navbarTogglerDemo03").style.display = status;
+}
+
+function navbarDisplayToggle(){
+        
+    if(getNavbarDisplayStatus()=="" || getNavbarDisplayStatus()=="none"){        
+        setNavbarDisplay("block");
+    }else{
+        setNavbarDisplay("none");
+    }
 }
 
 function addNavbarEvents(){
-    _("navbarTogglerDemo03").addEventListener("click", getNavbarDisplayStatus);
+    _("navbarButton").addEventListener("click", navbarDisplayToggle);
+}
 
+console.log("NAVBAR.JS");
+window.onload = function(){
+    addNavbarEvents();
 }
