@@ -6,8 +6,6 @@
     <body>
         <?php include "html/header.html"; ?>
 
-        <?php include "html/homepage.html"; ?>
-
         <?php include "html/form.html"; ?>
 
 
